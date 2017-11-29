@@ -1,0 +1,652 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+    font-family: "Microsoft Yahei";
+}
+.xiaoyuandian{
+    width: 25px;
+    height:300px;
+    position: fixed;
+    right:20px;
+    top:50%;
+    margin-top: -150px;
+    z-index: 9999;
+}
+.xiaoyuandian ul{
+    list-style: none;
+}
+.xiaoyuandian ul li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #b7b7b7;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.xiaoyuandian ul li.cur{
+    background-color: orange;
+    width: 16px;
+    height: 16px;
+}
+.hd{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 9999;
+}
+.hd .inner{
+    width:1000px;
+    height: 47px;
+    margin: 0 auto;
+    padding-top: 13px;
+}
+.hd .inner .logo-left{
+    float: left;
+    width: 129px;
+    height: 33px;
+    background: url(../images/icons.png) no-repeat -659px 0px;
+    text-indent: -9999em;
+}
+.hd .inner .logo-right{
+    float: left;
+    width: 89px;
+    height: 33px;
+    background: url(../images/icons.png) no-repeat -659px -43px;
+}
+.hd .inner ul{
+    float: right;
+    list-style: none;
+}
+.hd .inner ul li{
+    float: left;
+    padding: 0 10px;
+}
+.hd .inner ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 14px;
+    line-height: 33px;
+}
+
+/*白色模式的导航条*/
+.hd.white{
+    background-color: #f6f6f6;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+}
+.hd.white .logo-left{
+    background-position: 0px -637px;
+}
+
+.hd.white .logo-right{
+  background-position: -659px -86px
+}
+.hd.white ul li a{
+    color:#222;
+}
+.hd ul li a:hover{
+    text-decoration: underline;
+}
+.bd {
+    height: 100%;
+}
+
+.product-item {
+    width: 100%;
+    height: 0%;
+    background-color: red;
+    position: fixed;
+    /*所有的盒子（当然除了第0个盒子，默认都是top100%的，这样就藏起来了）*/
+    top: 100%;
+    overflow: hidden;
+}
+
+.product0 {
+    background-color: #f14849;
+    height: 100%;
+    top: 0;
+}
+
+.product1 {
+    background-color: #fdffbe;
+}
+
+.product2 {
+    background-color: #99fff9;
+}
+
+.product3 {
+    background-color: #6efd9d;
+}
+
+.product4 {
+    background-color: #4de4d0;
+}
+
+.product5 {
+    background-color: #fdffbe;
+}
+
+.product_inner {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.product_inner .product-img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 420px;
+    height: 420px;
+    margin-top: -810px;
+    padding-left: 80px;
+}
+
+.product_inner .detail-wrap {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 420px;
+    height: 200px;
+    margin-top: -800px;
+}
+
+.product_inner .detail-wrap ul {
+    list-style: none;
+}
+
+.product_inner .detail-wrap ul li {
+    margin: 8px 0 0 5px;
+}
+
+.product_inner .detail-wrap ul li.sign {
+    width: 110px;
+    height: 28px;
+    background-image: url(../images/icons.png);
+}
+
+.product_inner .detail-wrap ul li.sign.type1 {
+    background-position: -659px -319px;
+}
+
+.product_inner .detail-wrap ul li a.goods-name {
+    font-size: 26px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.product_inner .detail-wrap ul li.count-down {
+    font-size: 16px;
+}
+
+.product_inner .detail-wrap ul li.price {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.product_inner .detail-wrap ul li.price em {
+    display: inline-block;
+    height: 36px;
+    font-size: 36px;
+    line-height: 36px;
+    font-style: normal;
+    font-weight: 700;
+    vertical-align: bottom;
+}
+
+.product_inner .detail-wrap ul li.price span.unit {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 12px;
+    vertical-align: top;
+}
+
+.product_inner .detail-wrap ul li.operate a:link, .product_inner .detail-wrap ul li.operate a:visited {
+    display: block;
+    width: 146px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 20px;
+    text-align: center;
+    background: url(../images/icons.png) no-repeat -492px -493px;
+    color: white;
+    text-decoration: none;
+}
+
+.product1 .product_inner .detail-wrap ul li, .product1 .product_inner .detail-wrap ul li a {
+    color: #fd3e5d;
+}
+
+.product2 .product_inner .detail-wrap ul li, .product2 .product_inner .detail-wrap ul li a {
+    color: #ff6450;
+}
+
+.product3 .product_inner .detail-wrap ul li, .product3 .product_inner .detail-wrap ul li a {
+    color: #035be0;
+}
+
+.product4 .product_inner .detail-wrap ul li, .product4 .product_inner .detail-wrap ul li a {
+    color: #642be7;
+}
+
+.product5 .product_inner .detail-wrap ul li, .product5 .product_inner .detail-wrap ul li a {
+    color: #fd3e5d;
+}
+
+.product1 .product_inner .detail-wrap ul li.sign.type1 {
+    background-position: -659px -319px;
+}
+
+.product2 .product_inner .detail-wrap ul li.sign.type1 {
+    background-position: -659px -281px;
+}
+
+.product3 .product_inner .detail-wrap ul li.sign.type1 {
+    background-position: -659px -357px;
+}
+
+.product4 .product_inner .detail-wrap ul li.sign.type1 {
+    background-position: -659px -205px;
+}
+
+.product5 .product_inner .detail-wrap ul li.sign.type1 {
+    background-position: -659px -319px;
+}
+
+.product1 .product_inner .detail-wrap ul li.operate a:link, .product1 .product_inner .detail-wrap ul li.operate a:visited {
+    background-position: -492px -493px;
+}
+
+.product2 .product_inner .detail-wrap ul li.operate a:link, .product2 .product_inner .detail-wrap ul li.operate a:visited {
+    background-position: -312px -583px;
+}
+
+.product3 .product_inner .detail-wrap ul li.operate a:link, .product3 .product_inner .detail-wrap ul li.operate a:visited {
+    background-position: -336px -493px;
+}
+
+.product4 .product_inner .detail-wrap ul li.operate a:link, .product4 .product_inner .detail-wrap ul li.operate a:visited {
+    background-position: -468px -583px;
+}
+
+.product5 .product_inner .detail-wrap ul li.operate a:link, .product5 .product_inner .detail-wrap ul li.operate a:visited {
+    background-position: -492px -493px;
+}
+
+.product1 .product_inner .detail-wrap ul li.operate a:hover {
+    background-position: 0px -583px
+}
+
+.product2 .product_inner .detail-wrap ul li.operate a:hover {
+    background-position: -489px -303px;
+}
+
+.product3 .product_inner .detail-wrap ul li.operate a:hover {
+    background-position: -156px -583px;
+}
+
+.product4 .product_inner .detail-wrap ul li.operate a:hover {
+    background-position: -180px -493px;
+}
+
+.product5 .product_inner .detail-wrap ul li.operate a:hover {
+    background-position: 0px -583px;
+}
+
+.product_inner .bg1 {
+    position: absolute;
+    width: 230px;
+    height: 207px;
+    top: -20px;
+    right: 15%;
+    background: url(../images/shitou1_a.png) no-repeat;
+}
+
+.product_inner .bg2 {
+    position: absolute;
+    width: 1000px;
+    height: 680px;
+    left: 0;
+    top: 0;
+    background: url(../images/shitou1_b.png) no-repeat;
+}
+
+.product_inner .bg3 {
+    position: absolute;
+    width: 213px;
+    height: 145px;
+    left: 10%;
+    bottom: 5%;
+    background: url(../images/shitou1_c.png) no-repeat;
+}
+
+.product2 .product_inner .bg1 {
+    background: url(../images/shitou2_a.png) no-repeat;
+    top: 3%;
+    right: 20%;
+}
+
+.product2 .product_inner .bg2 {
+    background: url(../images/shitou2_b.png) no-repeat;
+}
+
+.product2 .product_inner .bg3 {
+    background: url(../images/shitou2_c.png) no-repeat;
+    width: 271px;
+    height: 221px;
+    bottom: 1%;
+    left: 54%;
+}
+
+.product3 .product_inner .bg1 {
+    background: url(../images/shitou3_a.png) no-repeat;
+    top: -7px;
+    right: 25%;
+}
+
+.product3 .product_inner .bg2 {
+    background: url(../images/shitou3_b.png) no-repeat;
+}
+
+.product3 .product_inner .bg3 {
+    background: url(../images/shitou3_c.png) no-repeat;
+}
+
+.product4 .product_inner .bg1 {
+    background: url(../images/shitou4_a.png) no-repeat;
+    left: 64%;
+    bottom: 0%;
+}
+
+.product4 .product_inner .bg2 {
+    background: url(../images/shitou4_b.png) no-repeat;
+}
+
+.product4 .product_inner .bg3 {
+    background: url(../images/shitou4_c.png) no-repeat;
+}
+
+/*首屏的光*/
+.product0 .lightbox {
+    margin-top: -180px;
+    position: relative;
+    height: 665px;
+
+}
+
+.product0 .light {
+    height: 660px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../images/light.png) no-repeat center top;
+}
+
+.product0 .light2 {
+    background-position: center -666px;
+}
+
+.product0 .light3 {
+    background-position: center -1334px;
+}
+
+.product0 .lightbox .lightfocus {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 50%;
+    top: 367px;
+    margin-left: -150px;
+    -webkit-perspective:600px;
+    -moz-perspective:600px;
+    perspective:600px;
+}
+
+.product0 .lightbox .lightfocus div {
+    background: url(../images/light.png) no-repeat;
+    width: 300px;
+    height: 300px;
+}
+
+/*类负责两个事情，一个是图片的背景定位，实际上就是换图了*/
+/*第二个事情就是要负责动画*/
+.product0 .lightbox .lightfocus .pic1 {
+    background-position: left bottom;
+    -webkit-animation: flipYIn 1s ease 0s forwards;
+    -moz-animation: flipYIn 1s ease 0s forwards;
+    -o-animation: flipYIn 1s ease 0s forwards;
+    -ms-animation: flipYIn 1s ease 0s forwards;
+    animation: flipYIn 1s ease 0s forwards;
+}
+
+.product0 .lightbox .lightfocus .pic2 {
+    background-position: -304px -1995px;
+    -webkit-animation: flipYOut 1s ease 0s forwards;
+    -moz-animation: flipYOut 1s ease 0s forwards;
+    -o-animation: flipYOut 1s ease 0s forwards;
+    -ms-animation: flipYOut 1s ease 0s forwards;
+    animation: flipYOut 1s ease 0s forwards;
+}
+
+@-webkit-keyframes flipYIn {
+    0% {
+        -webkit-transform:  rotateY(90deg);
+    }
+    40% {
+        -webkit-transform:  rotateY(-10deg);
+    }
+    70% {
+        -webkit-transform:  rotateY(10deg);
+    }
+    100% {
+        -webkit-transform:  rotateY(0deg);
+    }
+}
+@-moz-keyframes flipYIn {
+     0% {
+         -moz-transform:  rotateY(90deg);
+     }
+     40% {
+         -moz-transform:  rotateY(-10deg);
+     }
+     70% {
+         -moz-transform:  rotateY(10deg);
+     }
+     100% {
+         -moz-transform:  rotateY(0deg);
+     }
+ }
+@-ms-keyframes flipYIn {
+    0% {
+        -ms-transform:  rotateY(90deg);
+    }
+    40% {
+        -ms-transform:  rotateY(-10deg);
+    }
+    70% {
+        -ms-transform:  rotateY(10deg);
+    }
+    100% {
+        -ms-transform:  rotateY(0deg);
+    }
+}
+@-webkit-keyframes flipYOut {
+    0% {
+        -webkit-transform:rotateY(90deg);
+    }
+    40% {
+        -webkit-transform:rotateY(-10deg);
+    }
+    70% {
+        -webkit-transform:rotateY(10deg);
+    }
+    100% {
+        -webkit-transform: perspective(600px) rotateY(0deg);
+    }
+}
+@-moz-keyframes flipYOut {
+    0% {
+        -moz-transform:rotateY(90deg);
+    }
+    40% {
+        -moz-transform:rotateY(-10deg);
+    }
+    70% {
+        -moz-transform:rotateY(10deg);
+    }
+    100% {
+        -moz-transform:rotateY(0deg);
+    }
+}
+@-ms-keyframes flipYOut {
+    0% {
+        -ms-transform:rotateY(90deg);
+    }
+    40% {
+        -ms-transform:rotateY(-10deg);
+    }
+    70% {
+        -ms-transform:rotateY(10deg);
+    }
+    100% {
+        -ms-transform:rotateY(0deg);
+    }
+}
+.product0 .news{
+    margin: 20px auto 0px;
+    width:300px;
+    height: 20px;
+}
+.product0 .news .title{
+    color: yellow;
+    font-size: 14px;
+    float: left;
+    width: 60px;
+}
+.product0 .news .wufeng{
+    float: right;
+    width:210px;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.product0 .news .wufeng ul{
+    list-style: none;
+    width: 10000px;
+    position: absolute;
+}
+.product0 .news .wufeng ul li{
+    float: left;
+    margin-right: 20px;
+}
+.product0 .news .wufeng ul li a{
+    font-size: 14px;
+    text-decoration: none;
+    color:white;
+}
+
+.product0 .mouse{
+    position: absolute;
+    bottom:30px;
+    width:100%;
+    text-align: center;
+    margin-top: 30px;
+    color:white;
+    font-size: 14px;
+    line-height: 20px;
+}
+.footer{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    background-color: white;
+}
+.footer .links{
+    text-align: center;
+    padding: 30px 0;
+}
+.footer .links a{
+    padding: 0 10px;
+}
+.footer .help-wrap{
+    height: 175px;
+    width: 100%;
+    background: #f3f3f3;
+}
+.footer .help-wrap .inner{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.footer .help-wrap .inner dl{
+    float: left;
+    border-right: 1px solid #d6d6d6;
+    padding-right: 50px;
+    margin-right: 50px;
+}
+.footer .help-wrap .inner dl.no4{
+    border-right: none;
+}
+.footer .help-wrap .inner dl dt{
+    line-height: 30px;
+}
+.footer .help-wrap .inner dl dt i{
+    float: left;
+    width: 24px;
+    height:24px;
+    background: url(../images/icons.png) no-repeat -727px -433px;
+    margin-right: 10px;
+}
+.footer .help-wrap .inner dl.no2 dt i{
+    background-position: -659px -467px;
+}
+.footer .help-wrap .inner dl.no3 dt i{
+    background-position: -659px -433px;
+}
+.footer .help-wrap .inner dl.no4 dt i{
+    background-position: -693px -433px;
+}
+.footer .help-wrap .inner dl dt a{
+    color: #666;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.footer .help-wrap .inner dl dd{
+    padding-left: 36px;
+}
+.footer .help-wrap .inner dl dd a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height:200%;
+    color: #666;
+}
+
+.footer .copyright{
+    text-align: center;
+    height: 80px;
+    background-color: #e9e9e9;
+    padding-top: 35px;
+    font-size: 12px;
+    color:#333;
+    line-height: 175%;
+}
+.footer .copyright a{
+    color:#333;
+    text-decoration: none;
+}
+
+.ad{
+    position: fixed;
+    width:140px;
+    height:150px;
+    right:60px;
+    bottom:50px;
+}
